@@ -24,7 +24,7 @@ class video{
 # }
 
 # Assigning ffprobe information to variable via redirection is required in bash systems?
-# $ffmpeg = ffprobe -i /home/david/Videos/furiadeloskaratecas1983.mp4 2>&1
+# $ffmpeg = ffprobe -i $Filename 2>&1
 
 # Sample output of ffprobe data provided. Uncomment above, if you have the ffmpeg suite, and comment out below.
 $ffmpeg = @"
