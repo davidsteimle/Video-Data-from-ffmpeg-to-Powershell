@@ -96,7 +96,7 @@ $ffmpeg.ForEach({
         $Duration = $Duration -replace "Duration: ",""
         $Duration = $Duration -replace "\.",":"
         $Duration = $Duration -split ":"
-        $Duration = @{
+        $Duration = [ordered]@{
             "Hours" = $Duration[0]
             "Minutes" = $Duration[1]
             "Seconds" = $Duration[2]
@@ -127,4 +127,5 @@ $ffmpeg.ForEach({
         $ThisVideo.AudioStream = $AudioStream
     }
 })
+$ThisVideo
 }
