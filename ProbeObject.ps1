@@ -1,3 +1,4 @@
+function Get-FfmpegData{
 param(
     [string]$Filename
 )
@@ -126,3 +127,4 @@ $ffmpeg.ForEach({
         $ThisVideo.AudioStream = $AudioStream
     }
 })
+}
